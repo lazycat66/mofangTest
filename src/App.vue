@@ -22,10 +22,7 @@
 <script>
 import 'assets/less/base.less'
 import 'assets/less/home.less'
-import img_logo from 'assets/img/logo.jpg'
-import {
-	toast
-} from '@/utils/Toast'
+import img_logo from 'assets/img/mf-logo.png'
 import {
 	mapGetters,
 	mapState
@@ -45,11 +42,10 @@ export default {
 			})
 		},
 		signOut() {
-			toast('asdsdasd')
-			// this.$store.dispatch('logout');
-			// this.$router.push({
-			// 	path: '/'
-			// })
+			this.$store.dispatch('logout');
+			this.$router.push({
+				path: '/'
+			})
 		}
 	},
 	computed: mapGetters(['username', 'isLogin', 'subtitle'])

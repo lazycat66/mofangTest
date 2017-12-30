@@ -1,11 +1,20 @@
 <template>
-  <div>
-      home
-  </div>
+<div>
+	home
+	<button @click="fn()">toast</button>
+</div>
 </template>
 
 <script>
+import {
+	toast
+} from '@/utils/toast'
 export default {
-  name: 'Home'
+	name: 'Home',
+	methods: {
+		fn() {
+			toast('asdsdasd')
+		}
+	}
 }
 </script>
