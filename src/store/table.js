@@ -1,4 +1,3 @@
-import api from '@/axios/api'
 import * as types from '@/store/types'
 const state = {
     tableSubtitle: '',
@@ -8,20 +7,8 @@ const state = {
 
 const actions = {
       switchTable({commit},item) {
-          api.getTableData(item.belong, {type:item.name}).then(res => {
-              item.data = res.data
-              commit(types.SET_TABLE_DATA, item)
-          }, err => {
-              console.log(err)
-          })
       },
       getGuestDefaultData({commit,state},item) {
-          api.getTableData(item.api, {type:item.name}).then(res => {
-              item.data = res.data
-              commit(types.SET_TABLE_DATA, item)
-          }, err => {
-              console.log(err)
-          })
       },
       editTable({commit}, data){
           switch(data.type){

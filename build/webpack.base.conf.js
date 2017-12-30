@@ -10,10 +10,10 @@ function resolve (dir) {
 module.exports = {
   entry: {
     app: './src/main.js'
-  },
+},
   output: {
     path: config.build.assetsRoot,
-    filename: '[name].js',
+    filename: 'bundle.js',
     publicPath: process.env.NODE_ENV === 'production'
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
@@ -26,8 +26,7 @@ module.exports = {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
       '@': resolve('src'),
-      'assets': resolve('static'),
-      '$api': resolve('requestData')
+      'assets': resolve('static')
     }
   },
   module: {

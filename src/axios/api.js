@@ -40,30 +40,3 @@ export const fetch = (url, params) => {
             })
     })
 }
-
-const serverHost = 'http://localhost:9999'
-export default {
-    getTodoData(params){
-        return fetch('/api/todo',params)
-    },
-
-    getMessageData(params){
-        return fetch('/api/message',params)
-    },
-
-    getRecordData(params){
-        return fetch('/api/record',params)
-    },
-
-    getNewsData(params){
-        return fetch('/api/news',params)
-    },
-
-    getCompanyNewsData(params){
-        return fetch('/api/companyNews',params)
-    },
-
-    getTableData(url, params){
-        return fetch('/api/' + url, params)
-    }
-}
