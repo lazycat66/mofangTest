@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+header {
+  position: relative;
+  padding: 8px;
+  color: #fff;
+  background: #000;
+
+  img.logo {
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+
+  label{
+    margin-left: 15px;
+    color: #fff;
+    font-size: 18px;
+  }
+
+  .channel-bar{
+      display: inline-block;
+      margin-left: 200px;
+      font-size: 18px;
+      color: #999;
+
+      span.btn{
+          margin-right:30px;
+          cursor: pointer;
+
+          &:hover{
+              color: #ccc;
+          }
+
+          &.active{
+              color: #fff;
+          }
+      }
+  }
+
+  .info-bar{
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    color: #fff;
+
+    span{
+        cursor: pointer;
+    }
+
+    button{
+      margin-left: 20px;
+      color: #fff;
+      font-size: 12px;
+      border: none;
+      background: none;
+    }
+  }
+}
