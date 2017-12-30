@@ -1,4 +1,4 @@
-# MoFang New CRM Project Test
+# MoFang web
 
 - VUE|Element
 
@@ -16,7 +16,7 @@ npm run build
 npm run build --report
 
 # run unit tests
-npm run unit
+npm run unitß
 
 # run e2e tests
 npm run e2e
