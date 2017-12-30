@@ -5,5 +5,6 @@
 ## Step
 
 ``` bash
+# install dependencies
 npm install
 ```
