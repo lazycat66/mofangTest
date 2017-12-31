@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import 'assets/less/base.less'
-import 'assets/less/home.less'
-import img_logo from 'assets/img/mf-logo.png'
+import 'static/less/base.less'
+import 'static/less/home.less'
+import img_logo from 'static/img/mf-logo.png'
 import {
 	mapGetters,
 	mapState
